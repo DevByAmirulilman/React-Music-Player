@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #75b1a9;
+  font-family: "Oswald", sans-serif;
+}
+h1,
+h2,
+h3 {
+  color: rgb(66, 65, 65);
+}
+h3,
+h4 {
+  font-weight: 400;
+  color: rgb(131, 23, 23);
+}
+.App {
+  transition: all 0.8s ease;
+}
+.library-active {
+  margin-left: 10%;
+}
+.playing-animation {
+  .playerimg {
+    animation: rotation 8s infinite linear;
+    @keyframes rotation {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(359deg);
+      }
+    }
+  }
+}
+@import "./player";
+@import "./song";
+@import "./library";
+@import "./nav";
